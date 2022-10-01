@@ -19,7 +19,7 @@ async function browse() {
   const browser = await playwright.chromium.launch({
     args: ['--disable-features=site-per-process'],
   });
-  for (let i = 14556; i < 15000; i++) {
+  for (let i = 14556; i < 16000; i++) {
     console.log(i);
     const context = await browser.newContext();
     const page = await context.newPage();
